@@ -1,0 +1,6 @@
+{:deps {instaparse/instaparse {:mvn/version "1.4.10"}
+        org.clojure/data.csv {:mvn/version "1.0.0"}}
+ :paths ["src" "resources"]
+ :aliases {:run
+             {:main-opts ["-m" "sparql-parser.core"]
+              :exec-fn sparql-parser.core/-main}}}
