@@ -1,0 +1,126 @@
+
+"SELECT ?title\nWHERE\n{\n  <http://example.org/book/book1> <http://purl.org/dc/elements/1.1/title> ?title .\n}"
+
+[:QueryUnit
+ [:Query
+  [:Prologue]
+  [:SelectQuery
+   [:SelectClause
+    "SELECT"
+    [:Var
+     [:VAR1
+      "?"
+      [:VARNAME
+       [:PN_CHARS_U [:PN_CHARS_BASE "t"]]
+       [:PN_CHARS_U [:PN_CHARS_BASE "i"]]
+       [:PN_CHARS_U [:PN_CHARS_BASE "t"]]
+       [:PN_CHARS_U [:PN_CHARS_BASE "l"]]
+       [:PN_CHARS_U [:PN_CHARS_BASE "e"]]]]]]
+   [:WhereClause
+    "WHERE"
+    [:GroupGraphPattern
+     "{"
+     [:GroupGraphPatternSub
+      [:TriplesBlock
+       [:TriplesSameSubjectPath
+        [:VarOrTerm
+         [:GraphTerm
+          [:iri
+           [:IRIREF
+            "<"
+            "h"
+            "t"
+            "t"
+            "p"
+            ":"
+            "/"
+            "/"
+            "e"
+            "x"
+            "a"
+            "m"
+            "p"
+            "l"
+            "e"
+            "."
+            "o"
+            "r"
+            "g"
+            "/"
+            "b"
+            "o"
+            "o"
+            "k"
+            "/"
+            "b"
+            "o"
+            "o"
+            "k"
+            "1"
+            ">"]]]]
+        [:PropertyListPathNotEmpty
+         [:VerbPath
+          [:Path
+           [:PathAlternative
+            [:PathSequence
+             [:PathEltOrInverse
+              [:PathElt
+               [:PathPrimary
+                [:iri
+                 [:IRIREF
+                  "<"
+                  "h"
+                  "t"
+                  "t"
+                  "p"
+                  ":"
+                  "/"
+                  "/"
+                  "p"
+                  "u"
+                  "r"
+                  "l"
+                  "."
+                  "o"
+                  "r"
+                  "g"
+                  "/"
+                  "d"
+                  "c"
+                  "/"
+                  "e"
+                  "l"
+                  "e"
+                  "m"
+                  "e"
+                  "n"
+                  "t"
+                  "s"
+                  "/"
+                  "1"
+                  "."
+                  "1"
+                  "/"
+                  "t"
+                  "i"
+                  "t"
+                  "l"
+                  "e"
+                  ">"]]]]]]]]]
+         [:ObjectListPath
+          [:ObjectPath
+           [:GraphNodePath
+            [:VarOrTerm
+             [:Var
+              [:VAR1
+               "?"
+               [:VARNAME
+                [:PN_CHARS_U [:PN_CHARS_BASE "t"]]
+                [:PN_CHARS_U [:PN_CHARS_BASE "i"]]
+                [:PN_CHARS_U [:PN_CHARS_BASE "t"]]
+                [:PN_CHARS_U [:PN_CHARS_BASE "l"]]
+                [:PN_CHARS_U [:PN_CHARS_BASE "e"]]]]]]]]]]]
+       "."]]
+     "}"]]
+   [:SolutionModifier]]
+  [:ValuesClause]]]
